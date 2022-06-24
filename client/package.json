@@ -1,0 +1,30 @@
+{
+  "name": "pig-game",
+  "version": "1.0.0",
+  "description": "Recipe search application",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ../server/public",
+    "deploy": "parcel build index.html --dist-dir ../server/public && npm run start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gogola89/pig-game.git"
+  },
+  "author": "George Ogola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gogola89/pig-game/issues"
+  },
+  "homepage": "https://github.com/gogola89/pig-game#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "core-js": "^3.22.5",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

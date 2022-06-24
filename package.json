@@ -1,0 +1,23 @@
+{
+  "name": "pig-game",
+  "version": "1.0.0",
+  "description": "Pig game pure javascript html.",
+  "scripts": {
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "build": "npm run build --prefix client",
+    "watch": "npm run watch --prefix server",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "restart-cluster": "npm run restart-cluster --prefix server",
+    "delete-cluster": "npm run delete-cluster --prefix server",
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "test-server": "cd server && npm run test",
+    "test-watch-server": "cd server && npm run test-watch",
+    "test-client": "cd client && npm run test"
+  },
+  "author": "George Ogola",
+  "license": "ISC"
+}

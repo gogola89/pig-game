@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Http Server to serve your html projects locally",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "watch": "nodemon src/server.js",
+    "cluster": "pm2 start src/server.js -i 0 -l src/logs.txt",
+    "restart-cluster": "pm2 reload src/server.js",
+    "delete-cluster": "pm2 delete all server",
+    "test": "jest --detectOpenHandles",
+    "test-watch": "jest --watch --detectOpenHandles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gogola89/httpServer.git"
+  },
+  "author": "George Ogola",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "bugs": {
+    "url": "https://github.com/gogola89/httpServer/issues"
+  },
+  "homepage": "https://github.com/gogola89/httpServer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "pm2": "^5.2.0",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
